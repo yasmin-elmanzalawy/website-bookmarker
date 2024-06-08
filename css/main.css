@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+.main-continer {
+  font-family: "Pacifico", cursive;
+  height: 100vh;
+}
+.img-bg {
+  width: 100px;
+}
+.title {
+  position: relative;
+  background-image: linear-gradient(
+    rgb(36, 182, 255),
+    rgb(132, 178, 213),
+    rgba(0, 0, 0, 0.741)
+  );
+  background-clip: text;
+  color: transparent;
+}
+.submit-btn {
+
+  border: rgb(132, 178, 213) solid 2px;
+  color: rgb(132, 178, 213);
+}
+.submit-btn:hover {
+  background-color: rgb(132, 178, 213);
+  border: rgb(132, 178, 213) solid 2px;
+}
+.visit i,
+.visit span {
+  color: green;
+}
+.visit:hover i,
+.visit:hover span {
+  color: white;
+}
+.sub-title i,
+label i {
+  font-size: 20px;
+  background-image: linear-gradient(
+    rgb(36, 182, 255),
+    rgb(132, 178, 213),
+    rgba(0, 0, 0, 0.741)
+  );
+  background-clip: text;
+  color: transparent;
+}
+.index {
+  position: relative;
+  transition: 0.3s;
+}
+.index:hover::after {
+  top: 5px;
+}
+.index::after {
+  content: "";
+  display: block;
+  transition: 0.3s;
+  background-color: rgba(132, 178, 213, 0.748);
+  width: 50px;
+  margin: auto;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: -1;
+}
+
+
+.w-name {
+  position: relative;
+  transition: 0.3s;
+}
+.w-name:hover::after {
+  top: 5px;
+}
+.w-name::after {
+  content: "";
+  display: block;
+  transition: 0.3s;
+  background-color: rgba(132, 178, 213, 0.748);
+  width: 110px;
+  margin: auto;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: -1;
+}
+
+.visit {
+  position: relative;
+  transition: 0.3s;
+}
+.visit:hover::after {
+  top: 5px;
+}
+.visit::after {
+  content: "";
+  display: block;
+  transition: 0.3s;
+  background-color: rgba(132, 178, 213, 0.748);
+  width: 45px;
+  margin: auto;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: -1;
+}
+
+.delete {
+  position: relative;
+  transition: 0.3s;
+}
+.delete:hover::after {
+  top: 5px;
+}
+.delete::after {
+  content: "";
+  display: block;
+  transition: 0.3s;
+  background-color: rgba(132, 178, 213, 0.748);
+  width: 45px;
+  margin: auto;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: -1;
+}

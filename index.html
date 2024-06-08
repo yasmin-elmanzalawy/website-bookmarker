@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <div class="main-continer">
+        <div class="container ">
+            <div class="img-bg m-auto pt-4">
+                <img class="w-100" src="./img/cloud-library-1024.png" alt="cloud library image">
+            </div>
+            <h1 class="h2 mb-3 text-center"><span class="title">URL BookMarker</span></h1>
+            <div class="text-center sub-title">
+                <i class="fa-solid fa-bookmark px-3"></i><span class="h4 my-5 ">Bookmark your favourite sites</span><i
+                    class="fa-solid fa-bookmark px-3"></i>
+            </div>
+            <div class="my-3">
+                <label class="w-100" for="urlName"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name <input
+                    oninput="validName()"
+                        class="form-control " type="text" id="urlName" placeholder="Bookmark Name">
+                </label>
+            </div>
+
+            <div class="my-3">
+                <label class="w-100" for="urlWebsite"><i class="fa-solid fa-link pe-2"></i> Site URL <input
+                        oninput="ValidUrl()" class="form-control" type="text" id="urlWebsite" placeholder="Website URL">
+                </label>
+            </div>
+            <div id="alert" class="alert alert-danger d-none">- url name must at least contain 3 letters.
+                <br>
+                - the url must start with https:// or http://
+            </div>
+            <div class="text-center">
+
+                <button onclick="addUrl()" class="btn btn-outline-dark mt-3 submit-btn">Submit</button>
+            </div>
+
+
+            <div class="border overflow-hidden my-3">
+                <div class="overflow-hidden row text-center my-3">
+                    <div class="col-lg-3 mb-lg-0 mb-sm-5">
+                        <span class="index ">Index</span>
+                    </div>
+                    <div class="w-name col-lg-3 mb-lg-0 mb-sm-5">
+                        <div>Website Name</div>
+                    </div>
+                    <div class="visit col-lg-3 mb-lg-0 mb-sm-5">
+                        <div>Visit</div>
+                    </div>
+                    <div class="delete col-lg-3 mb-lg-0 mb-sm-5">
+                        <div>Delete</div>
+                    </div>
+                </div>
+
+
+
+                <div id="row">
+            
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
